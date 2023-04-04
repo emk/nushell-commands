@@ -20,7 +20,7 @@ Finally, nushell is actually a pretty reasonable functional programming language
 You can load everything as follows:
 
 ```nu
-source "nushell-commands.nu"
+source "nushell-commands/index.nu"
 ```
 
 You can use `code $nu.config-path` to open Nushell's configuration file, and add that line at the end.
