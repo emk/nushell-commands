@@ -12,3 +12,8 @@ export def "git branch-point" [] {
 export def "git branch-stat" [] {
     git diff --stat (git branch-point) HEAD --
 }
+
+# List the files that have been changed between the main branch and the current branch.
+export def "git branch-files" [] {
+    git diff --name-only (git branch-point) HEAD -- | lines
+}
