@@ -5,5 +5,6 @@
 # Generate this using:
 #
 #   ls *.nu | get name | where $it != "index.nu" | sort | each {|it| print $"use \"($it)\" *" }
+use "git-tools.nu" *
 use "ps-agg.nu" *
 use "rerun.nu" *
